@@ -1,11 +1,18 @@
 @import url(fonts.css);
 @import url(icons.css);
+@import url(labels.css);
 /**
  * Common
  */
 ul, li, p, h1, h2, h3, h4, h5, h6{
 	padding: 0px;
 	margin: 0px;
+}
+body{
+	overflow-x: hidden;
+}
+*:focus{
+	outline: none;
 }
 body, *{
 	font-family: "Open Sans";
@@ -29,6 +36,9 @@ a.btn:hover{
 	display: inline-block;
 	vertical-align: top;
 	margin-right: -4px;
+}
+.text-right{
+	text-align: right;
 }
 .btn{
 	border: 1px solid rgb(217, 65, 65);
@@ -59,6 +69,17 @@ i.icon{
 }
 .dropdown-btn{
 	position: relative;
+	padding: 0px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	color: rgb(38, 38, 38);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.dropdown-btn:focus{
+	outline: none;
 }
 .dropdown-btn:after{
 	position: absolute;
@@ -85,7 +106,6 @@ i.icon{
 }
 .header__top__menu > ul{
 	text-align: right;
-	padding-right: 55px;
 }
 .header__top__menu > ul > li{
 	display: inline-block;
@@ -139,8 +159,22 @@ i.icon{
 	border-bottom: 1px solid rgb(238, 238, 238);
 }
 .top-search{
+	position: relative;
 	padding-top: 14px;
 	padding-bottom: 14px;
+}
+.top-search__form:before{
+	position: absolute;
+	left: 0px;
+	content: " ";
+	display: block;
+	width: 147px;
+	height: 48px;
+	background: url(/img/logo.svg) no-repeat left center;
+	background-size: contain;
+	top: 50%;
+	margin-top: -24px;
+	left: -220px;
 }
 .top-search__form > *{
 	display: inline-block;
@@ -199,4 +233,58 @@ i.icon{
 .top-search__form input:focus{
 	outline: none;
 	border-color: rgb(217, 65, 65);
+}
+.top-search__city{
+	width: 45%;
+	text-align: center;
+	vertical-align: middle;
+}
+.top-search__city .dropdown-btn:before{
+	position: absolute;
+	left: -30px;
+	top: 50%;
+	margin-top: -10px;
+	background: url(/img/marker_icon.svg) no-repeat center;
+	width: 14px;
+	height: 20px;
+	content: " ";
+}
+.top-search__popular-cities{
+	width: 55%;
+}
+.top-search__popular-cities > ul > li{
+	display: inline-block;
+	margin-right: 10px;
+}
+.top-search__popular-cities > ul > li:last-child{
+	margin-right: 0px;
+}
+.burger-menu{
+	position: absolute;
+	right: -50px;
+	top: 50%;
+	margin-top: -10px;
+}
+.burger-menu button{
+	position: relative;
+	padding: 0px;
+	cursor: pointer;
+	border: none;
+	color: rgb(189, 189, 189);
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 12px;
+	text-transform: uppercase;
+	background: transparent;	
+}
+.burger-menu button:after{
+	content: ' ';
+	display: block;
+	background: url(/img/burger.svg);
+	width: 18px;
+	height: 12px;
+	top: 50%;
+	position: absolute;
+	margin-top: -6px;
+	right: -25px;
 }

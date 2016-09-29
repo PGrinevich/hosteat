@@ -1,0 +1,20 @@
+.label{
+	display: inline-block;
+	line-height: 26px;
+	padding-left: 12px;
+	padding-right: 11px;
+	color: grey;
+	font-size: 12px;
+	font-weight: 400;
+	background-color: rgb(239, 239, 239);
+	border-radius: 2px;
+}
+.label:hover{
+	color: grey;
+	text-decoration: none;
+}
+.label:focus{
+	text-decoration: none;
+	color: #fff;
+	background: rgb(217, 65, 65);
+}
