@@ -7,8 +7,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Host Eat</title>
 
-    <!-- Bootstrap -->
-    <link href="css/reset.css" rel="stylesheet">
+    <!-- Theme -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,7 +20,71 @@
     <![endif]-->
   </head>
 <body>
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row header__top v-middle">
+				<div class="col-md-2 header__top__logo inline">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="col-md-6 header__top__menu inline">
+					<ul>
+						<li>
+							<a href="#">Спеціальні пропозиції</a>
+						</li>
+						<li>
+							<a href="#">Що це ?</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 header__top__user-bar inline">
+					<ul>
+						<li>
+							<a href="#">Вхід</a>
+						</li>
+						<li>
+							<a class="red" href="#">Реєстрація</a>
+						</li>
+						<li>
+							<a href="#" class="btn round large">Стати хостом</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__top__lang">
+					<div class="dropdown">
+						<a href="#" class="dropdown-btn" data-toggle="dropdown"><i class="icon flag-ua"></i></a>
+					  	<ul class="dropdown-menu lang-dropdown-menu">
+					    	<li><a href="#"><i class="icon flag-ua"></i></a></li>
+					    	<li><a href="#"><i class="icon flag-ua"></i></a></li>
+					    	<li><a href="#"><i class="icon flag-ua"></i></a></li>
+					  	</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Search -->
+	<div class="top-search-wrapper">
+		<div class="container">
+			<div class="row top-search v-middle">
+				<div class="col-md-8 top-search__form inline">
+					<label>Оберіть категорію, яка вас цікавить у місті:</label>
+					<div class="top-search__form__input">
+						<input type="text" value="Брюховичі" class="text">
+					</div>
+				</div>
+				<div class="col-md-4 inline">
+					
+				</div>
+			</div>
+		</div>
+	</div>
 	
-	
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	</body>
 </html>

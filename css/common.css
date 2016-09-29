@@ -1,0 +1,202 @@
+@import url(fonts.css);
+@import url(icons.css);
+/**
+ * Common
+ */
+ul, li, p, h1, h2, h3, h4, h5, h6{
+	padding: 0px;
+	margin: 0px;
+}
+body, *{
+	font-family: "Open Sans";
+	font-weight: 400;
+}
+a{
+	transition: all 0.2s ease-in;
+}
+a:hover{
+	opacity: 0.7;
+	text-decoration: none;
+}
+a.btn:hover{
+	opacity: 1;
+}
+.v-middle > div{
+	float: none;
+	vertical-align: middle;
+}
+.inline{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -4px;
+}
+.btn{
+	border: 1px solid rgb(217, 65, 65);
+	display: inline-block;
+	color: rgb(217, 65, 65);
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+.btn.round{
+	border-radius: 20px;
+}
+.btn.round.large{
+	line-height: 38px;
+	min-width: 170px;
+}
+.btn:hover,
+.btn:focus{
+	color: #fff;
+	text-decoration: none;
+	background: rgb(217, 65, 65);
+}
+i.icon{
+	position: relative;
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+.dropdown-btn{
+	position: relative;
+}
+.dropdown-btn:after{
+	position: absolute;
+	right: -20px;
+	top: 50%;
+	margin-top: -4.5px;
+	content: " ";
+	background: url(/img/drop_down.svg) no-repeat center;
+	width: 12px;
+	height: 9px;
+}
+/**
+ * Header
+ */
+.header{
+	background: #fff;
+	width: 100%;
+	border-bottom: 1px solid rgb(238, 238, 238);
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+.header__top{
+	position: relative;
+}
+.header__top__menu > ul{
+	text-align: right;
+	padding-right: 55px;
+}
+.header__top__menu > ul > li{
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+.header__top__menu > ul > li > a{
+	color: rgb(189, 189, 189);
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 60px;
+	text-transform: uppercase;
+}
+.header__top__menu > ul > li > a:hover{
+	text-decoration: underline;
+}
+.header__top__user-bar > ul > li{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+.header__top__user-bar > ul > li:last-child{
+	margin-right: 0px;
+}
+.header__top__user-bar > ul > li > a:not(.btn){
+	color: rgb(38, 38, 38);
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 60px;
+	text-transform: uppercase;
+}
+.header__top__user-bar > ul > li > a.red{
+	color: rgb(217, 65, 65);
+}
+.header__top__lang{
+	position: absolute;
+	right: -40px;
+	top: 50%;
+	margin-top: -10px;
+}
+.lang-dropdown-menu{
+	left: auto;
+	right: -25px;
+	min-width: 0px;
+}
+/**
+ * Top Search
+ */
+.top-search-wrapper{
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+.top-search{
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+.top-search__form > *{
+	display: inline-block;
+	margin-right: -4px;
+	vertical-align: middle;
+}
+.top-search__form label{
+	color: rgb(38, 38, 38);
+	font-size: 14px;
+	font-weight: 600;
+	width: 43.3%;
+}
+.top-search__form .top-search__form__input{
+	width: 56%;
+	position: relative;
+}
+.top-search__form input{
+	height: 46px;
+	background-color: white;
+	border: 2px solid rgb(224, 224, 224);
+	border-radius: 4px;
+	text-align: center;
+	color: rgb(38, 38, 38);
+	box-sizing: border-box;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-size: 14px;
+	font-weight: 600;
+	transition: all 0.1s linear;
+	width: 100%;
+}
+.top-search__form .top-search__form__input:after{
+	position: absolute;
+	content: "Enter";
+	text-transform: uppercase;
+	position: absolute;
+	right: 60px;
+	top: 50%;
+	margin-top: -8.5px;
+	color: rgb(189, 189, 189);
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.top-search__form .top-search__form__input:before{
+	position: absolute;
+	content: " ";
+	display: block;
+	width: 19px;
+	height: 18px;
+	right: 25px;
+	top: 50%;
+	margin-top: -9px;
+	background: url(/img/icon_search.svg);
+}
+.top-search__form input:focus{
+	outline: none;
+	border-color: rgb(217, 65, 65);
+}
