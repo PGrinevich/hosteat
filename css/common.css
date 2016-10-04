@@ -885,6 +885,9 @@ a.edit-btn > i{
 	margin-bottom: 40px;
 	border-bottom: 1px solid rgb(238, 238, 238);
 }
+.note img{
+	margin-top: 40px;
+}
 .note .black-title{
 	margin-bottom: 10px;
 }
