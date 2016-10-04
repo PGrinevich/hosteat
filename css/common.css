@@ -56,6 +56,14 @@ a.btn:hover{
 	line-height: 38px;
 	min-width: 170px;
 }
+.btn.red{
+	background-color: rgb(217, 65, 65);
+	color: #fff;
+}
+.btn.red:hover{
+	background-color: transparent;
+	color: rgb(217, 65, 65);
+}
 .btn:hover,
 .btn:focus{
 	color: #fff;
@@ -104,6 +112,71 @@ i.icon{
 }
 .navbar-nav > li > a{
 	    color: #777;
+}
+.dropdown-style-1 > button{
+	background: transparent;
+	padding: 0px;
+	border: none;
+	color: rgb(38, 38, 38);
+	font-size: 12px;
+	font-weight: 700;
+}
+.dropdown-style-1 > button span.name{
+	position: relative;
+	margin-right: 34px;
+}
+.dropdown-style-1 > button span.name:after{
+	position: absolute;
+	width: 9px;
+	background: url(../img/drop_down_small.svg) no-repeat center;
+	height: 5px;
+	content: " ";
+	right: -18px;
+	top: 50%;
+	margin-top: -2.0px;
+}
+.dropdown-style-1 .dropdown-menu{
+	margin-top: 21px;
+	margin-left: -60px;
+	background-color: white;
+	border: 1px solid rgb(224, 224, 224);
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+	min-width: 200px;
+	border-radius: 0px;
+	padding: 0px;
+}
+.dropdown-style-1 .dropdown-menu > li > a{
+	padding: 10px 20px;
+	color: rgb(38, 38, 38);
+	font-size: 14px;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	font-weight: 400;
+	position: relative;
+}
+.dropdown-style-1 .dropdown-menu > li > a:hover{
+	background-color: rgb(242, 242, 242);
+	opacity: 1;
+	border-top: 1px solid rgb(238, 238, 238);
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+.dropdown-style-1 .dropdown-menu > li > a > .counter{
+	position: absolute;
+	color: rgb(217, 65, 65);
+	font-size: 14px;
+	font-weight: 700;
+	right: 0px;
+	top: 50%;
+	right: 20px;
+	margin-top: -10px;
+}
+.dropdown-style-1 .dropdown-menu > li > a span{
+	color: rgb(217, 65, 65);
+}
+.dropdown-style-1 .divider{
+	margin: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 /**
  * Header
@@ -165,6 +238,47 @@ i.icon{
 	left: auto;
 	right: -25px;
 	min-width: 0px;
+}
+.header__top__search__input{
+	border: 1px solid transparent;
+	width: 100%;
+	transition: all 0.3s ease-in;
+	color: rgb(189, 189, 189);
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.header__top__search__input:focus{
+	border-bottom-color: rgb(189, 189, 189);
+}
+.header__top__user__notification{
+	position: relative;
+	padding-right: 25px;
+	margin-right: 20px;
+	top: -3px;
+	color: rgb(189, 189, 189);
+	font-size: 11px;
+	font-weight: 400;
+}
+.header__top__user__options{
+	margin-right: 30px !important;
+}
+.header__top__user__notification:after{
+	position: absolute;
+	right: 0px;
+	background: url(../img/bell_gray.svg) no-repeat center;
+	content: " ";
+	top: 50%;
+	margin-top: -10px;
+	width: 18px;
+	height: 20px;
+}
+.header__top__user__notification__active{
+	color: rgb(217, 65, 65);
+}
+.header__top__user__notification__active:after{
+	background: url(../img/bell_red.svg) no-repeat center;
 }
 /**
  * Top Search
@@ -438,4 +552,308 @@ i.icon{
 }
 .footer-bottom__menu ul > li:last-child:after{
 	display: none;
+}
+/**
+ * User menu
+ */
+.user-menu{
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+.user-menu__ul > li{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+	margin-right: 25px;
+}
+.user-menu__ul > li:nth-child(6n){
+	margin-right: 0px;
+}
+.user-menu__ul > li > a{
+	display: block;
+	line-height: 38px;
+	min-width: 170px;
+	text-decoration: none;
+	text-align: center;
+	background-color: white;
+	border: 1px solid rgb(224, 224, 224);
+	border-radius: 3px;
+	color: rgb(38, 38, 38);
+	font-size: 14px;
+	font-weight: 600;
+	position: relative;
+}
+
+.user-menu__ul > li > a > span{
+	color: rgb(217, 65, 65);
+	font-weight: 400;
+}
+.user-menu__ul > li > a > .counter{
+	width: 25px;
+	display: inline-block;
+	color: rgb(217, 65, 65);
+	font-size: 14px;
+	font-weight: 700;
+}
+.user-menu__ul > li > a > .counter-gray{
+	color: rgb(153, 153, 153);
+}
+.user-menu__ul > li.large > a{
+	padding-left: 44px;
+	line-height: 44px;
+	padding-right: 44px;
+}
+.user-menu__ul > li > a > i{
+	position: relative;
+	top: 3px;
+	margin-left: 14px;
+}
+.user-menu__ul > li.active > a{
+	background-color: rgb(217, 65, 65);
+	color: #fff;
+	border-color: transparent;
+}
+.user-menu__ul > li.right{
+	width: auto;
+	text-align: right;
+	float: right;
+	position: relative;
+	margin-top: 30px;
+	margin-right: 6px;
+}
+.sort-drop-down button{
+	background: transparent;
+	border: none;
+	padding: 0px;
+	font-size: 12px;
+	color: gray;
+	font-weight: 400;
+}
+.sort-drop-down button span.red{
+	color: rgb(217, 65, 65);
+}
+.sort-drop-down button .caret{
+	border-top-color: rgb(217, 65, 65);
+}
+.sort-drop-down .dropdown-menu{
+	left: auto;
+	right: 0px;
+}
+/**
+ * Infoblocks
+ */
+.infoblock{
+	background-color: white;
+	border: 1px solid rgb(224, 224, 224);
+	border-radius: 2px;
+	box-sizing: border-box;
+	padding-bottom: 20px;
+}
+.infoblock .infoblock__image{
+	margin-top: -1px;
+	margin-left: -1px;
+	margin-right: -1px;
+	border-radius: 2px 2px 0px 0px;
+}
+.infoblock .infoblock__image img{
+	width: 100%;
+	height: auto;
+}
+.infoblock .infoblock__icon-place{
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	border-radius: 50%;
+	position: relative;
+	margin: auto;
+	margin-top: -30px;
+	margin-bottom: 15px;
+}
+.infoblock .infoblock__icon-place > i{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+}
+.infoblock .infoblock__title{
+	text-align: center;
+	color: rgb(38, 38, 38);
+	font-family: "Roboto Slab";
+	font-size: 21px;
+	font-weight: 700;
+	padding-bottom: 10px;
+
+}
+.infoblock .infoblock__description{
+	color: rgb(77, 77, 77);
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+.infoblock .infoblock__bottom{
+	text-align: center;
+}
+span.red{
+	color: rgb(217, 65, 65);
+}
+/**
+ * Titles
+ */
+.black-title{
+	color: rgb(38, 38, 38);
+	font-family: "Roboto Slab";
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+/**
+ * Dishes
+ */
+.dishes-list .dishes{
+	margin-bottom: 20px;
+}
+.dishes{
+	background: #fff;
+	border: 1px solid rgb(224, 224, 224);
+	border-radius: 2px;
+	padding-bottom: 19px;
+}
+.dishes .dishes__image{
+	min-height: 335px;
+	margin-bottom: 20px;
+}
+.dishes .dishes__image img{
+	width: 100%;
+	height: auto;
+}
+.dishes__panel{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.dishes__panel > div{
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	margin-right: -4px;
+}
+.dishes__panel__name{
+	color: rgb(38, 38, 38);
+	font-family: "Roboto Slab";
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+}
+.dishes__panel__name > i{
+	position: relative;
+	margin-right: 10px;
+	top: 2px;
+}
+.dishes__panel__options{
+	text-align: right;
+}
+.dishes__panel__options > ul > li{
+	display: inline-block;
+	margin-left: 12px;
+	vertical-align: middle;
+}
+a.edit-btn{
+	position: relative;
+	border: 1px solid rgb(224, 224, 224);
+	border-radius: 16px;
+	padding-right: 11px;
+	line-height: 30px;
+	color: rgb(153, 153, 153);
+	font-size: 11px;
+	font-weight: 400;
+	display: block;
+	padding-left: 15px;
+}
+a.edit-btn > i{
+	position: relative;
+	margin-right: 9px;
+	top: 2px;
+}
+.more-dropdown button{
+	width: 32px;
+	height: 32px;
+	position: relative;
+	background-color: white;
+	border: 1px solid rgb(224, 224, 224);
+	border-radius: 50%;
+}
+.more-dropdown > button > img{
+	position: absolute;
+	left: 0px; right: 0px; top: 0px; bottom: 0px;
+	margin: auto;
+}
+.more-dropdown > button:focus{
+	border-color: rgb(217, 65, 65);
+}
+.more-dropdown .dropdown-menu{
+	left: -70px;
+	background-color: white;
+	border: 1px solid rgb(224, 224, 224);
+	border-radius: 3px;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+	min-width: 170px;
+}
+.more-dropdown .dropdown-menu > li > a{
+	color: rgb(38, 38, 38);
+	font-size: 12px;
+	font-weight: 400;
+}
+.more-dropdown .dropdown-menu > li{
+	margin-bottom: 19px;
+}
+.more-dropdown .dropdown-menu > li:last-child{
+	margin-bottom: 10px;
+}
+.more-dropdown .dropdown-menu > li > a > i{
+	position: relative;
+	margin-right: 11px;
+	top: 1px;
+}
+.dishes .dishes__desc{
+	margin-left: 20px;
+	margin-right: 20px;
+	color: rgb(77, 77, 77);
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 26px;
+	padding-top: 8px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+.dishes .dishes__bottom{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.dishes .dishes__bottom > div{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: -4px;
+	margin-top: 15px;
+}
+.dishes .dishes__bottom > div.dishes__bottom__tags{
+	width: 70%;
+}
+.dishes__bottom__tags > ul > li{
+	display: inline-block;
+	margin-right: 10px;
+}
+.dishes .dishes__bottom__price{
+	text-align: right;
+	width: 30%;
+	color: rgb(217, 65, 65);
+	font-size: 14px;
+	font-weight: 400;
+}
+.dishes .dishes__bottom__price strong{
+	font-size: 21px;
+	font-weight: 700;
 }

@@ -47,5 +47,25 @@
 	.footer-bottom__menu ul > li > a{
 		font-size: 11px;
 	}
+	.dishes .dishes__image{
+		min-height: 0px;
+	}
+	.dishes__panel__name{
+		font-size: 16px;
+	}
+	.dishes__panel__name > i{
+		top: 5px;
+	}
+	.black-title{
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
+	.user-menu__ul > li{
+		margin-right: 5px;
+	}
+	.user-menu__ul > li.right{
+		float: none;
+	}
+
 
 }

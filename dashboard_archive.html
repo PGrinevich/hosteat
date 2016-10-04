@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/tablets.css">
+    <link rel="stylesheet" href="css/mobiles.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,35 +26,89 @@
 	<header class="header">
 		<div class="container">
 			<div class="row header__top v-middle">
-				<div class="col-md-2 header__top__logo inline">
+				<div class="col-md-2 col-sm-3 col-xs-8 header__top__logo inline">
 					<a href="#">
 						<img src="img/logo.svg" alt="">
 					</a>
 				</div>
-				<div class="col-md-6 header__top__menu inline">
-					<ul>
-						<li>
-							<a href="#">Спеціальні пропозиції</a>
-						</li>
-						<li>
-							<a href="#">Що це ?</a>
-						</li>
-					</ul>
+				<div class="col-xs-4 visible-xs">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"  aria-controls="navbar">
+		              <span class="sr-only">Toggle navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
 				</div>
-				<div class="col-md-4 header__top__user-bar inline text-right">
-					<ul>
+
+				<div class="col-xs-12 visible-xs">
+				<div class="navbar-collapse collapse" id="navbar">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#">Головна</a>
+						</li>
 						<li>
 							<a href="#">Вхід</a>
 						</li>
 						<li>
-							<a class="red" href="#">Реєстрація</a>
+							<a href="#">Реєстрація</a>
 						</li>
 						<li>
-							<a href="#" class="btn round large">Стати хостом</a>
+							<a href="#">Стати хостом</a>
+						</li>
+						<li>
+							<a href="#">Спеціальні пропозиції</a>
+						</li>
+						<li>
+							<a href="#">Що це?</a>
+						</li>
+					</ul>	
+				</div>
+
+				</div>
+
+				<div class="col-md-5 col-sm-5 header__top__search inline hidden-xs hidden-sm">
+					<input type="text" class="header__top__search__input" placeholder="Розпочати пошук">
+				</div>
+				<div class="col-md-5 col-sm-8 header__top__user-bar inline text-right hidden-xs">
+					<ul>
+						<li class="header__top__user__notification header__top__user__notification__active">
+							2
+						</li>
+						<li class="header__top__user__options">
+							<div class="dropdown dropdown-style-1">
+							  <button type="button" data-toggle="dropdown">	<span class="name">Олег</span>
+							  	<span class="avatar">
+							  		<img src="img/user_small.png" alt="">
+							  	</span>
+							  </button>
+							  <ul class="dropdown-menu">
+							    <li><a href="#">Моя сторінка</a></li>
+							    <li><a href="#">Моя їжа</a></li>
+							    <li><a href="#">Повідомлення <span class="counter">2</span></a></li>
+							    <li><a href="#">Сторінка <span>Хоста</span></a></li>
+							    <li><a href="#">Сторінка <span>Гурмана</span></a></li>
+							    <li class="divider"></li>
+							    <li class="has-icon">
+							    	<a href="#">
+							    		<i class="fa settings-icon"></i>
+							    		Налаштування
+							    	</a>
+							    </li>
+							    <li class="has-icon">
+							    	<a href="#">
+							    		<i class="fa logout-icon"></i>
+							    		Вийти
+							    	</a>
+							    </li>
+							  </ul>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="btn round large">Додати страву</a>
 						</li>
 					</ul>
 				</div>
-				<div class="header__top__lang">
+				<div class="header__top__lang hidden-xs">
 					<div class="dropdown">
 						<a href="#" class="dropdown-btn" data-toggle="dropdown"><i class="icon flag-ua"></i></a>
 					  	<ul class="dropdown-menu lang-dropdown-menu">
@@ -65,97 +121,289 @@
 			</div>
 		</div>
 	</header>
-	<!-- Search -->
-	<div class="top-search-wrapper">
+
+	<!-- Content goes here -->
+	<div class="user-menu">
 		<div class="container">
-			<div class="row top-search v-middle">
-				<div class="col-md-8 top-search__form inline">
-					<label>Оберіть категорію, яка вас цікавить у місті:</label>
-					<div class="top-search__form__input">
-						<input type="text" value="Брюховичі" class="text">
+			<ul class="user-menu__ul">
+				<li>
+					<a href="#">
+						Моя сторінка
+					</a>
+				</li>
+				<li class="active">
+					<a href="#">
+						Моя їжа
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Повідомлення <span class="counter">2</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Сторінка <span>Хоста</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Сторінка <span>Гурмана</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa setting-icon"></i>Налаштування
+					</a>
+				</li>
+			</ul>
+			<ul class="user-menu__ul">
+				<li class="large">
+					<a href="#">
+						Активні пропозиції 
+						<span class="counter-gray">(6)</span>
+						<i class="fa dishes-icon"></i>
+					</a>
+				</li>
+				<li class="large">
+					<a href="#">
+						Архів пропозицій 
+						<span class="counter-gray">(2)</span>
+						<i class="fa archive-icon"></i>
+					</a>
+				</li>
+				<li class="right">
+					<ul>
+						<li>
+							<div class="dropdown sort-drop-down">
+							  <button type="button" data-toggle="dropdown">Сортувати: <span class="red"> Останні пропозиції</span>
+							  <span class="caret"></span></button>
+							  <ul class="dropdown-menu">
+							    <li><a href="#">Останні пропозиції</a></li>
+							    <li><a href="#">Останні пропозиції</a></li>
+							    <li><a href="#">Останні пропозиції</a></li>
+							  </ul>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>	
+	</div>
+
+	<!-- Contet -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<div class="infoblock">
+					<div class="infoblock__image">
+						<img src="img/infoblock_img.jpg" class="img-responsive" alt="">
+					</div>
+					<div class="infoblock__icon-place">
+						<i class="fa icon-1"></i>
+					</div>
+					<div class="infoblock__title">Готові запросити до себе?</div>
+					<div class="infoblock__description">
+						Стати <span class="red">Хостом</span>
+					</div>
+					<div class="infoblock__bottom text-center">
+						<a href="#" class="btn round red large">Додати страву</a>
 					</div>
 				</div>
-				<div class="col-md-4 inline v-middle">
-					<div class="top-search__city inline">
-						<div class="dropdown">
-							<button  class="dropdown-btn" data-toggle="dropdown">
-								Бровари
-							</button>
-						  	<ul class="dropdown-menu">
-						    	<li><a href="#">Бровари</a></li>
-						    	<li><a href="#">Бровари</a></li>
-						    	<li><a href="#">Бровари</a></li>
-						  	</ul>
+			</div>
+			<div class="col-md-8 col-sm-12 col-xs-12">
+				<p class="black-title">Архів деактивованих пропозицій: 2</p>
+				<div class="dishes-list">
+
+					<div class="dishes">
+						<div class="dishes__image">
+							<img src="img/dishes_1.jpg" class="img-responsive" alt="">
+						</div>
+						<div class="dishes__panel">
+							<div class="dishes__panel__name">
+								<i class="fa icon-2"></i>
+								Вареники з вишнею
+							</div>
+							<div class="dishes__panel__options">
+								<ul>
+									<li>
+										<a href="#" class="edit-btn">
+											<i class="fa pencile-i"></i>
+											Редагувати
+										</a>
+									</li>
+									<li>
+										<div class="dropup more-dropdown">
+										  <button type="button" data-toggle="dropdown">
+										  	<img src="img/dots.svg" alt="">
+										  </button>
+										  <ul class="dropdown-menu">
+										    <li><a href="#"><i class="fa return-i"></i>Відновити страву</a></li>
+										    <li><a href="#">Видалити назавжди</a></li>
+										  </ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dishes__desc">
+							М’ясні страви, короткий опис
+						</div>
+
+						<div class="dishes__bottom">
+							<div class="dishes__bottom__tags">
+								<ul>
+									<li>
+										<span class="label red border">Cамовивіз</span>
+									</li>
+									<li>
+										<span class="label red border">Поїсти в гостях</span>
+									</li>
+								</ul>
+							</div>
+							<div class="dishes__bottom__price">
+								<strong>35</strong> грн/порція
+							</div>
 						</div>
 					</div>
-					<div class="top-search__popular-cities inline text-right">
-						<ul>
-							<li><a href="#" class="label gary">Харків</a></li>
-							<li><a href="#" class="label gary">Львів</a></li>
-							<li><a href="#" class="label gary">Київ</a></li>
-						</ul>
+
+					<div class="dishes">
+						<div class="dishes__image">
+							<img src="img/dishes_1.jpg" class="img-responsive" alt="">
+						</div>
+						<div class="dishes__panel">
+							<div class="dishes__panel__name">
+								<i class="fa icon-2"></i>
+								Вареники з вишнею
+							</div>
+							<div class="dishes__panel__options">
+								<ul>
+									<li>
+										<a href="#" class="edit-btn">
+											<i class="fa pencile-i"></i>
+											Редагувати
+										</a>
+									</li>
+									<li>
+										<div class="dropup more-dropdown">
+										  <button type="button" data-toggle="dropdown">
+										  	<img src="img/dots.svg" alt="">
+										  </button>
+										  <ul class="dropdown-menu">
+										    <li><a href="#"><i class="fa return-i"></i>Відновити страву</a></li>
+										    <li><a href="#">Видалити назавжди</a></li>
+										  </ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dishes__desc">
+							М’ясні страви, короткий опис
+						</div>
+
+						<div class="dishes__bottom">
+							<div class="dishes__bottom__tags">
+								<ul>
+									<li>
+										<span class="label red border">Cамовивіз</span>
+									</li>
+									<li>
+										<span class="label red border">Поїсти в гостях</span>
+									</li>
+								</ul>
+							</div>
+							<div class="dishes__bottom__price">
+								<strong>35</strong> грн/порція
+							</div>
+						</div>
 					</div>
+
 				</div>
-				<div class="burger-menu">
-					<button class="menu-btn">
-						<span>Меню</span>
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Filters -->
-	<div class="filters-wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="eat-categories">
-						<ul>
-							<li>
-								<input type="checkbox" id="chk_1" name="category">
-								<label for="chk_1">Страви з доставкою</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chk_2" name="category">
-								<label for="chk_2">Страви з самовивозом</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chk_3" name="category">
-								<label for="chk_3">Поїсти в гостях</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chk_4" name="category">
-								<label for="chk_4">Майстер клас</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chk_5" name="category">
-								<label for="chk_5">Кухар на виїзд</label>
-							</li>
-							<li>
-								<input type="checkbox" id="chk_6" name="category">
-								<label for="chk_6">Фуд-івенти</label>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-5">
-					s
-				</div>
-				<div class="col-md-4">d</div>
-				<div class="col-md-3">d</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Footer -->
 	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">1</div>
-				<div class="col-md-5">2</div>
-				<div class=" col-md-3">3</div>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="footer__block">
+							<p class="footer__block__title">Контакти:</p>
+							<div class="footer__block__content">
+								+38 067 344 39 24<br>
+								connect@hosteat.com<br>
+								Україна, Львів, вул Вітовського, 9<br>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-6 col-xs-12">
+						<div class="footer__block">
+							<p class="footer__block__title">Карта сайту:</p>
+							<div class="footer__block__content">
+								<ul class="footer__block__menu">
+									<li><a href="#">Головна</a></li>
+									<li><a href="#">Вхід</a></li>
+									<li><a href="#">Спеціальні пропозиції</a></li>
+									<li><a href="#">Реєстрація</a></li>
+									<li><a href="#">Як це працює ?</a></li>
+									<li><a href="#"><span>Стати Хостером</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class=" col-md-3 ">
+						<div class="footer__block">
+							<p class="footer__block__title">
+								<strong>HOSTEAT</strong> в Соц. мережах:
+							</p>
+							<div class="footer__block__content">
+								<ul class="footer__block__socials">
+									<li>
+										<a href="#">
+											<i class="fa facebook-i"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa vk-i"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa twitter-i"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa google-i"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-4 footer-bottom__copyright">
+						HostEat &copy; 2016 All rights reserved!
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-8 footer-bottom__menu">
+						<ul>
+							<li><a href="#">Умови використання</a></li>
+							<li><a href="#">Політика конфіденційності</a></li>
+							<li><a href="#">Політика використання cookie</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>

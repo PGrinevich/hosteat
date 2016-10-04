@@ -18,8 +18,71 @@ i.google-i{
 	width: 21px;
 	height: 13px;
 }
+i.settings-icon{
+	background: url('../img/user_options_sprite.svg') no-repeat 0 -1px;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin-right: 14px;
+	position: relative;
+	top: 1px;
+}
+i.logout-icon{
+	background: url('../img/user_options_sprite.svg') no-repeat 0 -37px;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin-right: 14px;
+	position: relative;
+	top: 1px;
+}
+i.archive-icon{
+	background: url('../img/user_icons.svg') no-repeat -296px 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+i.dishes-icon{
+	background: url('../img/user_icons.svg') no-repeat -1px 0;
+	width: 17px;
+	height: 16px;
+	display: inline-block;
+}
 i.icon.flag-ua{
 	background-image: url(/img/flag_ua.svg);
 	width: 18px;
 	height: 12px;
+}
+i.setting-icon{
+	background: url('../img/user_options_sprite.svg') no-repeat 0 -1px;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin-left: 0px;
+	margin-right: 10px;
+	top: 2px;
+}
+.icon-1{
+	background: url('../img/icon_1.svg') no-repeat center;
+	width: 25px;
+	height: 40px;
+	display: block;
+}
+i.icon-2{
+	background: url('../img/icon_2.svg') no-repeat center;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+}
+i.pencile-i{
+	background: url('../img/pencile.svg') no-repeat center;
+	width: 14px;
+	height: 14px;	
+	display: inline-block;
+}
+i.return-i{
+	background: url('../img/return_icon.svg') no-repeat center;
+	width: 13px;
+	height: 14px;	
+	display: inline-block;
 }
