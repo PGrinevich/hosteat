@@ -74,6 +74,12 @@ i.icon-2{
 	height: 22px;
 	display: inline-block;
 }
+i.icon-3{
+	background: url('../img/icon_3.svg') no-repeat center;
+	width: 26px;
+	height: 40px;
+	display: inline-block;
+}
 i.pencile-i{
 	background: url('../img/pencile.svg') no-repeat center;
 	width: 14px;

@@ -116,4 +116,25 @@
 	.dishes .dishes__bottom > div.dishes__bottom__tags{
 		width: 100%;
 	}
+	.note .text{
+		line-height: 20px;
+	}
+	.faq .faq__title{
+		line-height: 16px;
+		line-height: 20px;
+		border-bottom: none;
+		margin-bottom: 13px;
+	}
+	.faq-single{
+		margin-bottom: 15px;
+	}
+	.faq-single .col-md-4{
+		padding-bottom: 20px;
+	}
+	.faq .faq__content{
+		line-height: 22px;
+	}
+	.faq .faq__title > span{
+		padding-right: 0px;
+	}
 }

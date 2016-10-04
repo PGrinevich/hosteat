@@ -643,6 +643,17 @@ i.icon{
 /**
  * Infoblocks
  */
+.infoblock-list{
+	text-align: center;
+	border-bottom: 1px solid rgb(238, 238, 238);
+	margin-bottom: 40px;
+}
+.infoblock-list .infoblock{
+	max-width: 370px;
+	margin-bottom: 40px;
+	display: inline-block;
+	margin-right: 2.5%;
+}
 .infoblock{
 	background-color: white;
 	border: 1px solid rgb(224, 224, 224);
@@ -709,8 +720,19 @@ span.red{
 	font-size: 18px;
 	font-weight: 700;
 	margin-bottom: 40px;
-}
 
+}
+.black-title .right-span{
+	float: right;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 30px;
+	font-family: "Open Sans";
+	color: grey;
+}
+.black-title .right-span a{
+	color: rgb(217, 65, 65);
+}
 /**
  * Dishes
  */
@@ -856,4 +878,53 @@ a.edit-btn > i{
 .dishes .dishes__bottom__price strong{
 	font-size: 21px;
 	font-weight: 700;
+}
+.note{
+	text-align: center;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+.note .black-title{
+	margin-bottom: 10px;
+}
+.note .text{
+	color: grey;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+}
+.note .text a{
+	color: rgb(217, 65, 65);
+}
+
+/**
+ * FAQ
+ */
+.faq-single{
+	margin-bottom: 50px;
+}
+.faq .faq__title{
+	font-size: 14px;
+	color: rgb(153, 153, 153);
+	font-weight: 400;
+	margin-bottom: 27px;
+	line-height: 5px;
+	border-bottom: 1px solid rgb(238, 238, 238);
+	position: relative;
+}
+.faq .faq__title > span{
+	padding-right: 83px;
+	background: #fff;
+	z-index: 999;
+}
+.faq .faq__content{
+	padding-bottom: 46px;
+	color: rgb(38, 38, 38);
+	line-height: 16px;
+	font-size: 14px;
+	font-weight: 400;
+}
+.faq .faq__content a{
+	color: rgb(217, 65, 65);
 }
