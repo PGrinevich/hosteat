@@ -1,3 +1,23 @@
+i.facebook-i{
+	background: url('../img/socials.svg') no-repeat 0 0;
+	width: 8px;
+	height: 16px;
+}
+i.vk-i{
+	background: url('../img/socials.svg') no-repeat -54px -4px;
+	width: 20px;
+	height: 12px;
+}
+i.twitter-i{
+	background: url('../img/socials.svg') no-repeat -116px -4px;
+	width: 17px;
+	height: 14px;
+}
+i.google-i{
+	background: url('../img/socials.svg') no-repeat -174px -4px;
+	width: 21px;
+	height: 13px;
+}
 i.icon.flag-ua{
 	background-image: url(/img/flag_ua.svg);
 	width: 18px;

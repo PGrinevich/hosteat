@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/tablets.css">
-    <link rel="stylesheet" href="css/mobiles.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,47 +24,12 @@
 	<header class="header">
 		<div class="container">
 			<div class="row header__top v-middle">
-				<div class="col-md-2 col-sm-3 col-xs-8 header__top__logo inline">
+				<div class="col-md-2 header__top__logo inline">
 					<a href="#">
 						<img src="img/logo.svg" alt="">
 					</a>
 				</div>
-				<div class="col-xs-4 visible-xs">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"  aria-controls="navbar">
-		              <span class="sr-only">Toggle navigation</span>
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		            </button>
-				</div>
-
-				<div class="col-xs-12 visible-xs">
-				<div class="navbar-collapse collapse" id="navbar">
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="#">Головна</a>
-						</li>
-						<li>
-							<a href="#">Вхід</a>
-						</li>
-						<li>
-							<a href="#">Реєстрація</a>
-						</li>
-						<li>
-							<a href="#">Стати хостом</a>
-						</li>
-						<li>
-							<a href="#">Спеціальні пропозиції</a>
-						</li>
-						<li>
-							<a href="#">Що це?</a>
-						</li>
-					</ul>	
-				</div>
-
-				</div>
-
-				<div class="col-md-6 col-sm-5 header__top__menu inline hidden-xs hidden-sm">
+				<div class="col-md-6 header__top__menu inline">
 					<ul>
 						<li>
 							<a href="#">Спеціальні пропозиції</a>
@@ -76,7 +39,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-md-4 col-sm-8 header__top__user-bar inline text-right hidden-xs">
+				<div class="col-md-4 header__top__user-bar inline text-right">
 					<ul>
 						<li>
 							<a href="#">Вхід</a>
@@ -89,7 +52,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="header__top__lang hidden-xs">
+				<div class="header__top__lang">
 					<div class="dropdown">
 						<a href="#" class="dropdown-btn" data-toggle="dropdown"><i class="icon flag-ua"></i></a>
 					  	<ul class="dropdown-menu lang-dropdown-menu">
@@ -106,13 +69,13 @@
 	<div class="top-search-wrapper">
 		<div class="container">
 			<div class="row top-search v-middle">
-				<div class="col-md-8 col-xs-12 top-search__form inline">
-					<label class="hidden-xs hidden-sm">Оберіть категорію, яка вас цікавить у місті:</label>
+				<div class="col-md-8 top-search__form inline">
+					<label>Оберіть категорію, яка вас цікавить у місті:</label>
 					<div class="top-search__form__input">
 						<input type="text" value="Брюховичі" class="text">
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12 inline v-middle">
+				<div class="col-md-4 inline v-middle">
 					<div class="top-search__city inline">
 						<div class="dropdown">
 							<button  class="dropdown-btn" data-toggle="dropdown">
@@ -133,7 +96,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="burger-menu hidden-xs hidden-sm">
+				<div class="burger-menu">
 					<button class="menu-btn">
 						<span>Меню</span>
 					</button>
@@ -188,82 +151,11 @@
 
 	<!-- Footer -->
 	<footer class="footer">
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="footer__block">
-							<p class="footer__block__title">Контакти:</p>
-							<div class="footer__block__content">
-								+38 067 344 39 24<br>
-								connect@hosteat.com<br>
-								Україна, Львів, вул Вітовського, 9<br>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-5 col-sm-6 col-xs-12">
-						<div class="footer__block">
-							<p class="footer__block__title">Карта сайту:</p>
-							<div class="footer__block__content">
-								<ul class="footer__block__menu">
-									<li><a href="#">Головна</a></li>
-									<li><a href="#">Вхід</a></li>
-									<li><a href="#">Спеціальні пропозиції</a></li>
-									<li><a href="#">Реєстрація</a></li>
-									<li><a href="#">Як це працює ?</a></li>
-									<li><a href="#"><span>Стати Хостером</span></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class=" col-md-3 ">
-						<div class="footer__block">
-							<p class="footer__block__title">
-								<strong>HOSTEAT</strong> в Соц. мережах:
-							</p>
-							<div class="footer__block__content">
-								<ul class="footer__block__socials">
-									<li>
-										<a href="#">
-											<i class="fa facebook-i"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fa vk-i"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fa twitter-i"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fa google-i"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-4 col-xs-4 footer-bottom__copyright">
-						HostEat &copy; 2016 All rights reserved!
-					</div>
-					<div class="col-md-8 col-sm-8 col-xs-8 footer-bottom__menu">
-						<ul>
-							<li><a href="#">Умови використання</a></li>
-							<li><a href="#">Політика конфіденційності</a></li>
-							<li><a href="#">Політика використання cookie</a></li>
-						</ul>
-					</div>
-				</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">1</div>
+				<div class="col-md-5">2</div>
+				<div class=" col-md-3">3</div>
 			</div>
 		</div>
 	</footer>

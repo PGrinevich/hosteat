@@ -1,0 +1,62 @@
+@media (min-width: 220px) and (max-width: 760px) {
+	.footer__block__menu > li:nth-child(2n){
+		padding-left: 20px;
+	}
+	.footer__block .footer__block__title{
+		padding-bottom: 10px;
+		padding-top: 15px;
+	}
+	.footer .footer-top{
+		padding-top: 21px;
+		padding-bottom: 5px;
+	}
+	.footer__block__socials > li{
+		margin-top: 0px;
+		margin-right: 10px;
+	}
+	.footer-bottom__menu ul{
+		text-align: left;
+		display: none;
+	}
+	.v-middle > div{
+		float: left;
+	}
+	.header__top__logo img{
+		max-width: 100%;
+		height: auto;
+	}
+	.top-search__form .top-search__form__input{
+		width: 100%;
+	}
+	.top-search__form input{
+		padding-left: 20px;
+		text-align: left;
+	}
+	.top-search__form{
+		margin-bottom: 15px;
+	}
+	.top-search__city{
+		width: auto;
+		margin-left: 30px;
+	}
+	.top-search__popular-cities{
+		width: 100%;
+	}
+	.top-search__popular-cities{
+		text-align: left;
+		padding-top: 15px;
+	}
+	.top-search__form label{
+		width: 100%;
+		font-size: 13px;
+	}
+	.eat-categories ul > li{
+		margin-right: 0.5%;
+	}
+	.eat-categories ul > li label{
+		line-height: 36px;
+		padding-left: 12px;
+		padding-right: 12px;
+		font-size: 13px;
+	}
+}

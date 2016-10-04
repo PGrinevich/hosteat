@@ -1,0 +1,51 @@
+@media (min-width: 761px) and (max-width: 1200px){
+	.header__top__menu > ul > li{
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.header__top__user-bar > ul > li{
+		margin-right: 9px;
+	}
+	.header__top__lang{
+		right: 30px;
+	}
+	.top-search__form{
+		margin-bottom: 20px;
+	}
+	.top-search__form .top-search__form__input{
+		width: 100%;
+	}
+	.top-search__city{
+		text-align: left;
+		padding-left: 30px;
+		box-sizing: border-box;
+	}
+	.top-search__form:before{
+		display: none;
+	}
+	.footer__block .footer__block__title{
+		padding-bottom: 10px;
+		padding-top: 15px;
+	}
+	.footer__block{
+		margin-bottom: 40px;
+	}
+	.footer__block__socials > li{
+		margin-right: 10px;
+		margin-top: 5px;
+	}
+	.footer .footer-top{
+		padding-bottom: 0px;
+	}
+	.footer-bottom__menu ul{
+		padding: 0px;
+	}
+	.footer-bottom__menu ul > li{
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.footer-bottom__menu ul > li > a{
+		font-size: 11px;
+	}
+
+}
