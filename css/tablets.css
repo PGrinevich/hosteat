@@ -73,5 +73,11 @@
 	.infoblock-list .infoblock:nth-child(2n){
 		margin-right: 0px;
 	}
+	.setting-group__title{
+		margin-bottom: 20px;
+	}
+	.setting-group__title__under{
+		margin-top: 10px;
+	}
 
 }

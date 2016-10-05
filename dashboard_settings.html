@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Host Eat</title>
+
+    <!-- Theme -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/tablets.css">
+    <link rel="stylesheet" href="css/mobiles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row header__top v-middle">
+				<div class="col-md-2 col-sm-3 col-xs-8 header__top__logo inline">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="col-xs-4 visible-xs">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"  aria-controls="navbar">
+		              <span class="sr-only">Toggle navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+				</div>
+
+				<div class="col-xs-12 visible-xs">
+				<div class="navbar-collapse collapse" id="navbar">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#">Головна</a>
+						</li>
+						<li>
+							<a href="#">Вхід</a>
+						</li>
+						<li>
+							<a href="#">Реєстрація</a>
+						</li>
+						<li>
+							<a href="#">Стати хостом</a>
+						</li>
+						<li>
+							<a href="#">Спеціальні пропозиції</a>
+						</li>
+						<li>
+							<a href="#">Що це?</a>
+						</li>
+					</ul>	
+				</div>
+
+				</div>
+
+				<div class="col-md-5 col-sm-5 header__top__search inline hidden-xs hidden-sm">
+					<input type="text" class="header__top__search__input" placeholder="Розпочати пошук">
+				</div>
+				<div class="col-md-5 col-sm-8 header__top__user-bar inline text-right hidden-xs">
+					<ul>
+						<li class="header__top__user__notification header__top__user__notification__active">
+							2
+						</li>
+						<li class="header__top__user__options">
+							<div class="dropdown dropdown-style-1">
+							  <button type="button" data-toggle="dropdown">	<span class="name">Олег</span>
+							  	<span class="avatar">
+							  		<img src="img/user_small.png" alt="">
+							  	</span>
+							  </button>
+							  <ul class="dropdown-menu">
+							    <li><a href="#">Моя сторінка</a></li>
+							    <li><a href="#">Моя їжа</a></li>
+							    <li><a href="#">Повідомлення <span class="counter">2</span></a></li>
+							    <li><a href="#">Сторінка <span>Хоста</span></a></li>
+							    <li><a href="#">Сторінка <span>Гурмана</span></a></li>
+							    <li class="divider"></li>
+							    <li class="has-icon">
+							    	<a href="#">
+							    		<i class="fa settings-icon"></i>
+							    		Налаштування
+							    	</a>
+							    </li>
+							    <li class="has-icon">
+							    	<a href="#">
+							    		<i class="fa logout-icon"></i>
+							    		Вийти
+							    	</a>
+							    </li>
+							  </ul>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="btn round large">Додати страву</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__top__lang hidden-xs">
+					<div class="dropdown">
+						<a href="#" class="dropdown-btn" data-toggle="dropdown"><i class="icon flag-ua"></i></a>
+					  	<ul class="dropdown-menu lang-dropdown-menu">
+					    	<li><a href="#"><i class="icon flag-ua"></i></a></li>
+					    	<li><a href="#"><i class="icon flag-ua"></i></a></li>
+					    	<li><a href="#"><i class="icon flag-ua"></i></a></li>
+					  	</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Content goes here -->
+	<div class="user-menu">
+		<div class="container">
+			<ul class="user-menu__ul">
+				<li>
+					<a href="#">
+						Моя сторінка
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Моя їжа
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Повідомлення <span class="counter">2</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Сторінка <span>Хоста</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Сторінка <span>Гурмана</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="#">
+						<i class="fa white-setting-icon"></i>Налаштування
+					</a>
+				</li>
+			</ul>
+		</div>	
+	</div>
+
+	<!-- Settings content -->
+	<div class="container setting-page-content">
+		<div class="row">
+			<div class="col-md-offset-4 col-md-8">
+				<p class="black-title">Налаштування</p>
+			</div>
+		</div>
+		<!-- Settings group -->
+		<div class="row setting-group">
+			<div class="col-md-4">
+				<div class="setting-group__title">
+					<span class="red">Email налаштування:</span>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="setting-group__option-title">
+					<p class="setting-group__option-title__left">Ваш Email адрес</p>
+					<div class="line"></div>
+				</div>
+				<div class="setting-group__option__content">
+					<div class="setting-group__option__content__left">
+						CaseyHaze@gmail.com
+					</div>
+					<div class="setting-group__option__content__right">
+						<a href="#" class="icon-btn pencile-btn">
+							Редагувати
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row setting-group">
+			<div class="col-md-4">
+				<div class="setting-group__title">
+					<span class="red">&nbsp;</span>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="setting-group__option-title">
+					<p class="setting-group__option-title__left">Сповіщення від  HostEat</p>
+					<div class="line"></div>
+				</div>
+				<div class="setting-group__option__content">
+					<div class="setting-group__option__content__left">
+						Дозволити, сповіщати мене про останні новини, активність,<br>
+						та унікальні пропозиції від HostEat.
+					</div>
+					<div class="setting-group__option__content__right">
+						<div class="custum-radio">
+							<input type="checkbox" checked="" id="chk-1">
+							<label for="chk-1"> </label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row setting-group">
+			<div class="col-md-4">
+				<div class="setting-group__title">
+					<span class="red">Пароль</span>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="setting-group__option-title">
+					<p class="setting-group__option-title__left">Мій пароль</p>
+					<div class="line"></div>
+				</div>
+				<div class="setting-group__option__content">
+					<div class="setting-group__option__content__left">
+						Пароль було оновлено 7 місяців тому
+					</div>
+					<div class="setting-group__option__content__right">
+						<a href="#" class="icon-btn pencile-btn">
+							Редагувати
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row setting-group">
+			<div class="col-md-4">
+				<div class="setting-group__title">
+					<span class="red">Мій акаунт:</span>
+					<div class="setting-group__title__under">
+						Сервіс HostEat <span class="red">не використовує</span> ваші особисті дані<br>
+						у власних цілях, та не розголошує їх 3-м особам.
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="setting-group__option-title">
+					<p class="setting-group__option-title__left">З'єднання з Facebook</p>
+					<div class="line"></div>
+				</div>
+				<div class="setting-group__option__content">
+					<div class="setting-group__option__content__left">
+						З'єднати мій обліковий запис з соц. мережею <span class="blue">Facebook</span>
+					</div>
+					<div class="setting-group__option__content__right">
+						<div class="conntected-account">
+							<div class="left">
+								Олег Шаргородський<br>
+								<a href="#">Роз’єднати</a>
+							</div>
+							<div class="right">
+								<div class="inner">
+									<img src="img/user_small.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row setting-group">
+			<div class="col-md-4">
+				<div class="setting-group__title">
+					<span class="red"> </span>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="setting-group__option-title">
+					<p class="setting-group__option-title__left">З'єднання з Vk.com</p>
+					<div class="line"></div>
+				</div>
+				<div class="setting-group__option__content">
+					<div class="setting-group__option__content__left">
+						З'єднати мій обліковий запис з соц. мережею <span class="blue">Vk.com</span>
+					</div>
+					<div class="setting-group__option__content__right">
+						<a href="#" class="icon-btn vk-btn">
+							&nbsp;&nbsp;З’єднати
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row setting-group">
+			<div class="col-md-4">
+				<div class="setting-group__title">
+					<span class="red"> </span>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="setting-group__option-title">
+					<p class="setting-group__option-title__left">З'єднання з Google +</p>
+					<div class="line"></div>
+				</div>
+				<div class="setting-group__option__content">
+					<div class="setting-group__option__content__left">
+						З'єднати мій обліковий запис з соц. мережею <span class="red">Google +</span>
+					</div>
+					<div class="setting-group__option__content__right">
+						<a href="#" class="icon-btn google-btn">
+							&nbsp;&nbsp;З’єднати
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row setting-group">
+			<div class="col-md-4">
+				<div class="setting-group__title">
+					<span class="red">Деактивація</span>
+					<div class="setting-group__title__under">
+						Персональну сторінку буде <span class="red">видалено</span> через <span class="red">90 днів</span>,<br>
+						після деактивації сторінки.
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="setting-group__option-title">
+					<p class="setting-group__option-title__left">Деактивація сторінки</p>
+					<div class="line"></div>
+				</div>
+				<div class="setting-group__option__content">
+					<div class="setting-group__option__content__left">
+						Якщо у Вас виникли сумніви у доцільності існування Вашої сторінки<br>
+						на нашому сервісі, Ви можете деактивувати сторінку.
+					</div>
+					<div class="setting-group__option__content__right">
+						<a href="#" class="icon-btn delete-btn">
+							Деактивувати
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="footer__block">
+							<p class="footer__block__title">Контакти:</p>
+							<div class="footer__block__content">
+								+38 067 344 39 24<br>
+								connect@hosteat.com<br>
+								Україна, Львів, вул Вітовського, 9<br>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-6 col-xs-12">
+						<div class="footer__block">
+							<p class="footer__block__title">Карта сайту:</p>
+							<div class="footer__block__content">
+								<ul class="footer__block__menu">
+									<li><a href="#">Головна</a></li>
+									<li><a href="#">Вхід</a></li>
+									<li><a href="#">Спеціальні пропозиції</a></li>
+									<li><a href="#">Реєстрація</a></li>
+									<li><a href="#">Як це працює ?</a></li>
+									<li><a href="#"><span>Стати Хостером</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class=" col-md-3 ">
+						<div class="footer__block">
+							<p class="footer__block__title">
+								<strong>HOSTEAT</strong> в Соц. мережах:
+							</p>
+							<div class="footer__block__content">
+								<ul class="footer__block__socials">
+									<li>
+										<a href="#">
+											<i class="fa facebook-i"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa vk-i"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa twitter-i"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa google-i"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-4 footer-bottom__copyright">
+						HostEat &copy; 2016 All rights reserved!
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-8 footer-bottom__menu">
+						<ul>
+							<li><a href="#">Умови використання</a></li>
+							<li><a href="#">Політика конфіденційності</a></li>
+							<li><a href="#">Політика використання cookie</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

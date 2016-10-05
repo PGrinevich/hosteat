@@ -27,6 +27,15 @@ i.settings-icon{
 	position: relative;
 	top: 1px;
 }
+i.white-setting-icon{
+	background: url('../img/white_settings_icon.svg') no-repeat 0 -1px;
+	width: 14px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 14px;
+	position: relative;
+	top: -1px;	
+}
 i.logout-icon{
 	background: url('../img/user_options_sprite.svg') no-repeat 0 -37px;
 	width: 14px;
@@ -91,4 +100,28 @@ i.return-i{
 	width: 13px;
 	height: 14px;	
 	display: inline-block;
+}
+.icon-btn.pencile-btn:before{
+	background: url('../img/pencile.svg') no-repeat center;
+	width: 14px;
+	height: 14px;	
+	margin-top: -7px;
+}
+.icon-btn.vk-btn:before{
+	background: url('../img/vk_google_cancle.svg') no-repeat -18px -1px;
+	width: 18px;
+	height: 11px;	
+	margin-top: -5.5px;
+}
+.icon-btn.google-btn:before{
+	background: url('../img/vk_google_cancle.svg') no-repeat -16px -89px;
+	width: 22px;
+	height: 14px;	
+	margin-top: -7px;	
+}
+.icon-btn.delete-btn:before{
+	background: url('../img/vk_google_cancle.svg') no-repeat 0 -205px;
+	width: 14px;
+	height: 14px;	
+	margin-top: -7px;	
 }

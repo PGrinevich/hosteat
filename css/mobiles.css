@@ -137,4 +137,34 @@
 	.faq .faq__title > span{
 		padding-right: 0px;
 	}
+	.setting-group{
+		margin-bottom: 20px;
+	}
+	.setting-group .setting-group__title{
+		margin-bottom: 20px;
+	}
+	.setting-group__option__content > div{
+		display: block;
+		width: 100% !important;
+		margin-right: 0px;
+	}
+	.setting-group__option-title{
+		margin-bottom: 15px;
+	}
+	.setting-group__option__content__left{
+		margin-bottom: 25px;
+	}
+	.setting-group__option__content > div.setting-group__option__content__right{
+		text-align: center;
+	}
+	.setting-group__title__under{
+		margin-top: 10px;
+		line-height: 16px;
+	}
+	.setting-group__title__under br{
+		display: none;
+	}
+	.setting-group__option__content > div.setting-group__option__content__left{
+		font-size: 12px;
+	}
 }
