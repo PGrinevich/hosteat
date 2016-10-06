@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Host Eat</title>
+
+    <!-- Theme -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/tablets.css">
+    <link rel="stylesheet" href="css/mobiles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row header__top v-middle">
+				<div class="col-md-2 col-sm-3 col-xs-8 header__top__logo inline">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="col-xs-4 visible-xs">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"  aria-controls="navbar">
+		              <span class="sr-only">Toggle navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+				</div>
+
+				<div class="col-xs-12 visible-xs">
+				<div class="navbar-collapse collapse" id="navbar">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#">Головна</a>
+						</li>
+						<li>
+							<a href="#">Вхід</a>
+						</li>
+						<li>
+							<a href="#">Реєстрація</a>
+						</li>
+						<li>
+							<a href="#">Стати хостом</a>
+						</li>
+						<li>
+							<a href="#">Спеціальні пропозиції</a>
+						</li>
+						<li>
+							<a href="#">Що це?</a>
+						</li>
+					</ul>	
+				</div>
+
+				</div>
+
+				<div class="col-md-6 col-sm-5 header__top__menu inline hidden-xs hidden-sm">
+					<ul>
+						<li>
+							<a href="#">Спеціальні пропозиції</a>
+						</li>
+						<li>
+							<a href="#">Що це ?</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-8 header__top__user-bar inline text-right hidden-xs">
+					<ul>
+						<li>
+							<a href="#">Вхід</a>
+						</li>
+						<li>
+							<a class="red" href="#">Реєстрація</a>
+						</li>
+						<li>
+							<a href="#" class="btn round large">Стати хостом</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__top__lang hidden-xs">
+					<div class="dropdown">
+						<a href="#" class="dropdown-btn" data-toggle="dropdown"><i class="icon flag-ua"></i></a>
+					  	<ul class="dropdown-menu lang-dropdown-menu">
+					    	<li><a href="#"><i class="icon flag-ua"></i></a></li>
+					    	<li><a href="#"><i class="icon flag-ua"></i></a></li>
+					    	<li><a href="#"><i class="icon flag-ua"></i></a></li>
+					  	</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Search -->
+	<div class="top-search-wrapper">
+		<div class="container">
+			<div class="row top-search v-middle">
+				<div class="col-md-8 col-xs-12 top-search__form top-search__form__large inline">
+					
+					<div class="top-search__form__input">
+						<input type="text" value="Брюховичі" class="text">
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 inline v-middle">
+					<div class="top-search__city inline">
+						<div class="dropdown">
+							<button  class="dropdown-btn" data-toggle="dropdown">
+								Бровари
+							</button>
+						  	<ul class="dropdown-menu">
+						    	<li><a href="#">Бровари</a></li>
+						    	<li><a href="#">Бровари</a></li>
+						    	<li><a href="#">Бровари</a></li>
+						  	</ul>
+						</div>
+					</div>
+					<div class="top-search__popular-cities inline text-right">
+						<ul>
+							<li><a href="#" class="label gary">Харків</a></li>
+							<li><a href="#" class="label gary">Львів</a></li>
+							<li><a href="#" class="label gary">Київ</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="burger-menu hidden-xs hidden-sm">
+					<button class="menu-btn">
+						<span>Меню</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Content goes here -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 hidden-xs">
+				<div class="note-block">
+					<div class="note-block__top">
+						<p class="note-block__top__title">Корисні поради</p>
+						<p class="note-block__top__actions">
+							<a href="#"><i class="fa next-icon"></i></a>
+							<a href="#"><i class="fa gray-cross-icon"></i></a>
+						</p>
+					</div>
+					<div class="note-block__content">
+						Щоб смачно перекусити, достатьо, перейти у розділ Пошук, та вибрати найбільш привабливу для Вас страву :)
+					</div>
+				</div>
+				<div class="video-invite">
+					<p class="video-invite-title">
+						<span>Youtube</span> інвайт запрошення:
+					</p>
+					<div class="video-invite__content">
+						Чоловік втирається у хвіст, а тим часом намотує його на руку. Як намотав, тоді вовка буком по голові.
+					</div>
+					<div class="video-invite-iframe">
+						<iframe src="https://www.youtube.com/embed/165X_WTtxLI" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="host-page">
+					<div class="host-page__top">
+						<div class="host-page__top__image">
+							<div>
+								<img src="img/user_medium_img.png" alt="">
+							</div>
+						</div>
+						<div class="host-page__top__details">
+							<div class="host-page__top__details__top">
+								<div class="host-page__top__details__top__left">
+									<p>Марія Іванівна</p>
+									<div class="city">
+										<span>Україна, Львів</span>
+									</div>
+								</div>
+								<div class="host-page__top__details__top__right">
+									<div class="stars __web-inspector-hide-shortcut__">
+										<i class="fa star"></i>
+										<i class="fa star"></i>
+										<i class="fa star"></i>
+										<i class="fa star"></i>
+										<i class="fa star-empty"></i>
+										<span>(6)</span>
+									</div>
+									<div class="lang">
+										<span>English, French, Spanish</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="host-page__top__details__bottom">
+								<div class="host-page__top__details__bottom__tags">
+									<div>Cамовивіз</div>
+									<div>Поїсти в гостях</div>
+								</div>
+								<div class="food-categories">
+									<div class="hamburger">4</div>
+									<div class="chines-food">8</div>
+									<div class="apple">1</div>
+									<div class="cake">1</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="title-has-line">
+						<div class="left">Про мене</div>
+						<div class="line"></div>
+						<div class="right">
+							<div class="dropdown dropdown-style-2">
+								<a href="#" class="icon-btn dots-btn" data-toggle="dropdown">
+									Опції
+								</a>
+							  <ul class="dropdown-menu">
+							    <li><a href="#" class="btn-block-user">Заблокувати Марію</a></li>
+							  </ul>
+							</div>
+						</div>
+					</div>
+					<div class="host-page-about">
+						<ul class="host-page-about__info">
+							<li>
+								<strong>Вік:</strong> 45 років
+							</li>
+							<li>
+								<strong>Інтереси:</strong> Кулінарія
+							</li>
+							<li>
+								<strong>Професія:</strong> Бізнесмен
+							</li>
+						</ul>
+						<div class="host-page-about__desc">
+							Чоловік втирається у хвіст, а тим часом намотує його на руку. Як намотав, тоді вовка буком по голові та по хребті. Вовк тікати, а той тримає і б’є. Як сірий шарпнувся, то хвіст лиш тріснув і залишився в госпо руках. Василько поніс монету додому. Мати нараз купила кукурудзяної муки і зварила каші. <a href="#">Детальніше…</a>
+						</div>
+					</div>
+
+					<!-- User dishes -->
+					<div class="title-has-line title-has-line__dropdown-right">
+						<div class="left">Пропозиції: 14</div>
+						<div class="line"></div>
+						<div class="right">
+							<div class="dropdown sort-drop-down">
+								<button  data-toggle="dropdown">Сортувати: <span class="red">Всі пропозиції <span class="caret"></span></span></button>
+							  <ul class="dropdown-menu">
+							    <li><a href="#">Перші відгуки</a></li>
+							    <li><a href="#">Перші відгуки</a></li>
+							  </ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="dishes-list">
+					<div class="dishes">
+						<div class="dishes__image">
+							<img src="img/dishes_1.jpg" class="img-responsive" alt="">
+						</div>
+						<div class="dishes__panel">
+							<div class="dishes__panel__name">
+								<i class="fa icon-2"></i>
+								Вареники з вишнею
+							</div>
+							<div class="dishes__panel__options">
+								<div class="stars">
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star-empty"></i>
+									<span>(413)</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="dishes__desc-city">
+							<div class="dishes__desc">М’ясні страви, короткий опис</div>
+							<div class="dishes__city city">
+								<span>Україна, Львів</span>
+							</div>
+						</div>
+
+						<div class="dishes__bottom">
+							<div class="dishes__bottom__tags">
+								<ul>
+									<li>
+										<span class="label red border">Cамовивіз</span>
+									</li>
+									<li>
+										<span class="label red border">Поїсти в гостях</span>
+									</li>
+								</ul>
+							</div>
+							<div class="dishes__bottom__price">
+								<strong>35</strong> грн/порція
+							</div>
+						</div>
+					</div>
+					<div class="dishes">
+						<div class="dishes__image">
+							<img src="img/dishes_1.jpg" class="img-responsive" alt="">
+						</div>
+						<div class="dishes__panel">
+							<div class="dishes__panel__name">
+								<i class="fa icon-2"></i>
+								Вареники з вишнею
+							</div>
+							<div class="dishes__panel__options">
+								<div class="stars">
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star-empty"></i>
+									<span>(413)</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="dishes__desc-city">
+							<div class="dishes__desc">М’ясні страви, короткий опис</div>
+							<div class="dishes__city city">
+								<span>Україна, Львів</span>
+							</div>
+						</div>
+
+						<div class="dishes__bottom">
+							<div class="dishes__bottom__tags">
+								<ul>
+									<li>
+										<span class="label red border">Cамовивіз</span>
+									</li>
+									<li>
+										<span class="label red border">Поїсти в гостях</span>
+									</li>
+								</ul>
+							</div>
+							<div class="dishes__bottom__price">
+								<strong>35</strong> грн/порція
+							</div>
+						</div>
+					</div>
+					<div class="dishes">
+						<div class="dishes__image">
+							<img src="img/dishes_1.jpg" class="img-responsive" alt="">
+						</div>
+						<div class="dishes__panel">
+							<div class="dishes__panel__name">
+								<i class="fa icon-2"></i>
+								Вареники з вишнею
+							</div>
+							<div class="dishes__panel__options">
+								<div class="stars">
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star-empty"></i>
+									<span>(413)</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="dishes__desc-city">
+							<div class="dishes__desc">М’ясні страви, короткий опис</div>
+							<div class="dishes__city city">
+								<span>Україна, Львів</span>
+							</div>
+						</div>
+
+						<div class="dishes__bottom">
+							<div class="dishes__bottom__tags">
+								<ul>
+									<li>
+										<span class="label red border">Cамовивіз</span>
+									</li>
+									<li>
+										<span class="label red border">Поїсти в гостях</span>
+									</li>
+								</ul>
+							</div>
+							<div class="dishes__bottom__price">
+								<strong>35</strong> грн/порція
+							</div>
+						</div>
+					</div>
+
+					<div class="dishes">
+						<div class="dishes__image">
+							<img src="img/dishes_1.jpg" class="img-responsive" alt="">
+						</div>
+						<div class="dishes__panel">
+							<div class="dishes__panel__name">
+								<i class="fa icon-4"></i>
+								Ковбаса по Китайськи
+							</div>
+							<div class="dishes__panel__options">
+								<div class="stars">
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star-empty"></i>
+									<span>(413)</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="dishes__desc-city">
+							<div class="dishes__desc">М’ясні страви, короткий опис</div>
+							<div class="dishes__city city">
+								<span>Україна, Львів</span>
+							</div>
+						</div>
+
+						<div class="dishes__bottom">
+							<div class="dishes__bottom__tags">
+								<ul>
+									<li>
+										<span class="label red border">Cамовивіз</span>
+									</li>
+									<li>
+										<span class="label red border">Поїсти в гостях</span>
+									</li>
+								</ul>
+							</div>
+							<div class="dishes__bottom__price">
+								<strong>35</strong> грн/порція
+							</div>
+						</div>
+					</div>
+
+					<div class="dishes">
+						<div class="dishes__image">
+							<img src="img/dishes_1.jpg" class="img-responsive" alt="">
+						</div>
+						<div class="dishes__panel">
+							<div class="dishes__panel__name">
+								<i class="fa icon-4"></i>
+								Ковбаса по Китайськи
+							</div>
+							<div class="dishes__panel__options">
+								<div class="stars">
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star"></i>
+									<i class="fa star-empty"></i>
+									<span>(413)</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="dishes__desc-city">
+							<div class="dishes__desc">М’ясні страви, короткий опис</div>
+							<div class="dishes__city city">
+								<span>Україна, Львів</span>
+							</div>
+						</div>
+
+						<div class="dishes__bottom">
+							<div class="dishes__bottom__tags">
+								<ul>
+									<li>
+										<span class="label red border">Cамовивіз</span>
+									</li>
+									<li>
+										<span class="label red border">Поїсти в гостях</span>
+									</li>
+								</ul>
+							</div>
+							<div class="dishes__bottom__price">
+								<strong>35</strong> грн/порція
+							</div>
+						</div>
+					</div>
+					</div>
+
+					<div class="pagination">
+						<ul>
+							<li class="pagination__prev pagination__disactive"><a href="#">Назад</a></li>
+							<li class="active">1</li>
+							<li><a href="#">2</a></li>
+							<li class="pagination__next"><a href="#">Вперед</a></li>
+						</ul>
+					</div>
+
+					<!-- Reviews -->
+					<div class="title-has-line  title-has-line__dropdown-right">
+						<div class="left">Відгуки: 44</div>
+						<div class="line"></div>
+						
+						<div class="right">
+							<div class="dropdown sort-drop-down">
+								<button  data-toggle="dropdown">Сортувати: <span class="red">Всі пропозиції <span class="caret"></span></span></button>
+							  <ul class="dropdown-menu">
+							    <li><a href="#">Перші відгуки</a></li>
+							    <li><a href="#">Перші відгуки</a></li>
+							  </ul>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="reviews-list">
+						<div class="review">
+							<div class="review__left">
+								<div>
+									<img src="img/user_middle_img_2.png" alt="">
+								</div>
+							</div>
+							<div class="review__right">
+								<p class="review__title">Степан Анатолієвич</p>
+								<div class="review__date-star">
+									<div class="review__date-star__date">12.06.2016 р.</div>
+									<div class="stars __web-inspector-hide-shortcut__">
+										<i class="fa star"></i>
+										<i class="fa star"></i>
+										<i class="fa star"></i>
+										<i class="fa star"></i>
+										<i class="fa star-empty"></i>
+									</div>
+								</div>
+								<div class="review__text">
+									Прибіг вовк до лісу і наробив там страшного крику. Всі вовки збіглися на його вереск. Як вчули, що сталося, то на своїй нараді вирішили розірвати чоловіка. Йдуть всі туди. А господар настрашився і виліз на дуба. Збіглися вовки під дуба і радяться, як їм того чоловіка.
+								</div>
+							</div>
+						</div>
+
+						<div class="review">
+							<div class="review__left">
+								<div>
+									<img src="img/user_middle_img_2.png" alt="">
+								</div>
+							</div>
+							<div class="review__right">
+								<p class="review__title">Степан Анатолієвич</p>
+								<div class="review__date-star">
+									<div class="review__date-star__date">12.06.2016 р.</div>
+									<div class="stars __web-inspector-hide-shortcut__">
+										<i class="fa star"></i>
+										<i class="fa star"></i>
+										<i class="fa star"></i>
+										<i class="fa star"></i>
+										<i class="fa star-empty"></i>
+									</div>
+								</div>
+								<div class="review__text">
+									Прибіг вовк до лісу і наробив там страшного крику. Всі вовки збіглися на його вереск. Як вчули, що сталося, то на своїй нараді вирішили розірвати чоловіка. Йдуть всі туди. А господар настрашився і виліз на дуба. Збіглися вовки під дуба і радяться, як їм того чоловіка.
+								</div>
+							</div>
+						</div>
+
+						<div class="review">
+							<div class="review__left">
+								<div>
+									<img src="img/user_middle_img_2.png" alt="">
+								</div>
+							</div>
+							<div class="review__right">
+								<p class="review__title">Степан Анатолієвич</p>
+								<div class="review__date-star">
+									<div class="review__date-star__date">12.06.2016 р.</div>
+									<div class="stars __web-inspector-hide-shortcut__">
+										<i class="fa star"></i>
+										<i class="fa star"></i>
+										<i class="fa star"></i>
+										<i class="fa star"></i>
+										<i class="fa star-empty"></i>
+									</div>
+								</div>
+								<div class="review__text">
+									Прибіг вовк до лісу і наробив там страшного крику. Всі вовки збіглися на його вереск. Як вчули, що сталося, то на своїй нараді вирішили розірвати чоловіка. Йдуть всі туди. А господар настрашився і виліз на дуба. Збіглися вовки під дуба і радяться, як їм того чоловіка.
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Pagination -->
+					<div class="pagination">
+						<ul>
+							<li class="pagination__prev pagination__disactive"><a href="#">Назад</a></li>
+							<li class="active">1</li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li class="dots"><img src="img/dots_gray.svg" alt=""></li>
+							<li><a href="#">12</a></li>
+							<li class="pagination__next"><a href="#">Вперед</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 visible-xs">
+				<div class="note-block">
+					<div class="note-block__top">
+						<p class="note-block__top__title">Корисні поради</p>
+						<p class="note-block__top__actions">
+							<a href="#"><i class="fa next-icon"></i></a>
+							<a href="#"><i class="fa gray-cross-icon"></i></a>
+						</p>
+					</div>
+					<div class="note-block__content">
+						Щоб смачно перекусити, достатьо, перейти у розділ Пошук, та вибрати найбільш привабливу для Вас страву :)
+					</div>
+				</div>
+				<div class="video-invite">
+					<p class="video-invite-title">
+						<span>Youtube</span> інвайт запрошення:
+					</p>
+					<div class="video-invite__content">
+						Чоловік втирається у хвіст, а тим часом намотує його на руку. Як намотав, тоді вовка буком по голові.
+					</div>
+					<div class="video-invite-iframe">
+						<iframe src="https://www.youtube.com/embed/165X_WTtxLI" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Map -->
+	<div class="host-on-map">
+		<div class="map-overlay"></div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12240.480935403988!2d24.020992299831185!3d49.83787014010405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1suk!2sua!4v1475790913971" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="footer__block">
+							<p class="footer__block__title">Контакти:</p>
+							<div class="footer__block__content">
+								+38 067 344 39 24<br>
+								connect@hosteat.com<br>
+								Україна, Львів, вул Вітовського, 9<br>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-6 col-xs-12">
+						<div class="footer__block">
+							<p class="footer__block__title">Карта сайту:</p>
+							<div class="footer__block__content">
+								<ul class="footer__block__menu">
+									<li><a href="#">Головна</a></li>
+									<li><a href="#">Вхід</a></li>
+									<li><a href="#">Спеціальні пропозиції</a></li>
+									<li><a href="#">Реєстрація</a></li>
+									<li><a href="#">Як це працює ?</a></li>
+									<li><a href="#"><span>Стати Хостером</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class=" col-md-3 ">
+						<div class="footer__block">
+							<p class="footer__block__title">
+								<strong>HOSTEAT</strong> в Соц. мережах:
+							</p>
+							<div class="footer__block__content">
+								<ul class="footer__block__socials">
+									<li>
+										<a href="#">
+											<i class="fa facebook-i"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa vk-i"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa twitter-i"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa google-i"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-4 footer-bottom__copyright">
+						HostEat &copy; 2016 All rights reserved!
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-8 footer-bottom__menu">
+						<ul>
+							<li><a href="#">Умови використання</a></li>
+							<li><a href="#">Політика конфіденційності</a></li>
+							<li><a href="#">Політика використання cookie</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

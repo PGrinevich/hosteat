@@ -89,6 +89,12 @@ i.icon-3{
 	height: 40px;
 	display: inline-block;
 }
+i.icon-4{
+	background: url('../img/cat_2.svg') no-repeat center;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+}
 i.pencile-i{
 	background: url('../img/pencile.svg') no-repeat center;
 	width: 14px;
@@ -162,4 +168,40 @@ i.return-i{
 	width: 14px;
 	height: 14px;
 	display: inline-block;
+}
+i.next-icon{
+	display: inline-block;
+	background: url('../img/note_icons.svg') no-repeat -1px -1px;
+	width: 15px;
+	height: 10px;
+}
+i.gray-cross-icon{
+	display: inline-block;
+	background: url('../img/note_icons.svg') no-repeat -31px -1px;
+	width: 10px;
+	height: 10px;
+}
+.food-categories > div.hamburger:before{
+	background: url('../img/food_categories.svg') no-repeat -1px -1px;
+	width: 16px;
+	height: 16px;
+	margin-top: -8px;
+}
+.food-categories > div.chines-food:before{
+	background: url('../img/food_categories.svg') no-repeat -64px -1px;
+	width: 16px;
+	height: 16px;
+	margin-top: -10px;
+}
+.food-categories > div.apple:before{
+	background: url('../img/food_categories.svg') no-repeat -126px -1px;
+	width: 16px;
+	height: 16px;
+	margin-top: -9px;
+}
+.food-categories > div.cake:before{
+	background: url('../img/food_categories.svg') no-repeat -188px -1px;
+	width: 16px;
+	height: 16px;
+	margin-top: -9px;
 }

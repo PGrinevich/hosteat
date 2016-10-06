@@ -203,4 +203,82 @@
 		margin-left: 0px;
 		margin-top: 15px;
 	}
+	.title-has-line .right{
+		padding-left: 9px;
+	}
+	.title-has-line .right .dropdown-style-2{
+		margin-top: -9px;
+	}
+	.pagination > ul > li.pagination__prev{
+		margin-right: 15px;
+	}
+	.pagination > ul > li.pagination__next{
+		margin-left: 15px;
+	}
+	.pagination > ul > li.pagination__prev.pagination__disactive:before{
+		display: none;
+	}
+	.pagination > ul > li.pagination__next:after{
+		display: none;
+	}
+	.order .order__user-data__image__name{
+		width: 100%;
+	}
+	.host-on-map iframe{
+		height: 200px;
+	}
+	.review > div{
+		display: block;
+		width: 100% !important;
+		margin-left: 0px !important;
+	}
+	.review__left{
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.review__left img{
+		margin: auto;
+	}
+	.host-page__top > div{
+		display: block;
+		width: 100% !important;
+		margin: 0px !important;
+	}
+	.host-page__top__details__top > div{
+		display: block;
+		width: 100%;
+		margin-right: 0px;
+	}
+	.host-page__top__details__top__right{
+		text-align: left;
+	}
+	.host-page__top__details__bottom > div{
+		display: block;
+		width: 100%;
+		margin-right: 0px;
+	}
+	.host-page__top__details__bottom .food-categories{
+		text-align: left;
+		margin-top: 4px;
+	}
+	.host-page__top__details__bottom__tags > div{
+		margin-right: 7px;
+		margin-bottom: 10px;
+	}
+	.host-page__top__details__top__left > p{
+		text-align: center;
+	}
+	.host-page__top__image{
+		text-align: center;
+	}
+	.host-page__top__image img{
+		margin: auto;
+	}
+	.title-has-line__dropdown-right .right{
+		float: none !important;
+		padding-left: 0px;
+	}
+	.title-has-line.title-has-line__dropdown-right .line{
+		top: 100%;
+	}
 }
