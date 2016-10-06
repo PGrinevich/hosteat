@@ -125,3 +125,41 @@ i.return-i{
 	height: 14px;	
 	margin-top: -7px;	
 }
+.icon-btn.dots-btn:before{
+	background: url('../img/red_dots.svg') no-repeat;
+	width: 16px;
+	height: 6px;	
+	margin-top: -3px;	
+}
+.fa.bell-icon{
+	background: url('../img/host_sprites.svg') no-repeat 0 0;
+	width: 17px;
+	height: 19px;
+}
+.fa.note-icon{
+	background: url('../img/host_sprites.svg') no-repeat -304px 0;
+	width: 17px;
+	height: 19px;
+}
+.fa.case-icon{
+	background: url('../img/host_sprites.svg') no-repeat -595px -2px;
+	width: 17px;
+	height: 16px;	
+}
+.fa.cross-icon{
+	background: url('../img/host_sprites.svg') no-repeat -892px -2px;
+	width: 16px;
+	height: 16px;	
+}
+.fa.star{
+	background: url('../img/stars.svg') no-repeat 0 0;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+}
+.fa.star-empty{
+	background: url('../img/stars.svg') no-repeat -19px 0;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+}

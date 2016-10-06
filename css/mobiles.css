@@ -167,4 +167,40 @@
 	.setting-group__option__content > div.setting-group__option__content__left{
 		font-size: 12px;
 	}
+	.approve-order-block .col-md-8{
+		padding-right: 15px;
+	}
+	.approve-order-block .col-md-4{
+		padding-left: 15px;
+	}
+	.dropdown-style-2 .dropdown-menu{
+		margin-left: -80px;
+	}
+	.order__user_data__order-info span.red{
+		padding-bottom: 8px;
+	}
+	.order__user-data__about__text{
+		padding-bottom: 24px;
+	}
+	.dishes .dishes__desc-city > div{
+		display: block;
+		width: 100% !important;
+		margin-right: 0px;
+		text-align: left !important;
+	}
+	.dishes .dishes__desc-city > div.dishes__city{
+		padding-top: 0px;
+	}
+	.title-has-line .right{
+		padding-left: 0px;
+		line-height: 16px;
+		padding-top: 9px;
+	}
+	.approve-order-block__actions{
+		margin-top: 20px;
+	}
+	.approve-order-block__actions .btn{
+		margin-left: 0px;
+		margin-top: 15px;
+	}
 }
